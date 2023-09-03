@@ -11,7 +11,7 @@ class Cart(models.model):
         return  self.cart_id
 
 class CarItem(models.model):
-    class CartItem(models.Model):
+    
     user = models.ForeignKey(User, on_delete=models.CASCADE, null = True)
     product = models.ForeignKey(Car, on_delete=models.CASCADE)
     car=models.ForeignKey(Car,on_delete=models.CASCADE)
